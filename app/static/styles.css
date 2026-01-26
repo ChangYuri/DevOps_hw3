@@ -1,0 +1,16 @@
+:root{
+  --bg:#f7f7fb;
+  --card:#fff;
+  --accent:#2b6cb0;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;background:var(--bg);color:#111}
+.container{max-width:880px;margin:28px auto;padding:20px}
+h1{margin:0 0 12px}
+.card{background:var(--card);padding:14px;margin:12px 0;border-radius:8px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.card h2{margin:0 0 8px;font-size:1.05rem}
+input{padding:8px;border:1px solid #ddd;border-radius:6px;width:100%;max-width:480px;margin-right:8px}
+button{background:var(--accent);color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+.result{white-space:pre-wrap;background:#f0f6ff;padding:10px;border-radius:6px;margin-top:8px;color:#04243b}
+footer{margin-top:18px;color:var(--muted);font-size:.9rem}

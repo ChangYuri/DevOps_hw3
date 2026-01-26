@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Simple Recipes Demo</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Recipes Demo (Minimal)</h1>
+
+      <section class="card">
+        <h2>Daily Recommendation</h2>
+        <button id="btn-daily">Get Daily</button>
+        <div id="daily-result" class="result"></div>
+      </section>
+
+      <section class="card">
+        <h2>Recommend by Ingredients</h2>
+        <p>Enter comma-separated ingredients, e.g.: egg,tomato,oil,salt</p>
+        <input id="ingredients" placeholder="Enter ingredients, comma-separated" />
+        <button id="btn-recommend">Recommend</button>
+        <div id="recommend-result" class="result"></div>
+      </section>
+
+      <section class="card">
+        <h2>Get Recipe by ID</h2>
+        <input id="recipe-id" placeholder="Enter recipe id (e.g. 1)" />
+        <button id="btn-get-recipe">Get</button>
+        <div id="recipe-result" class="result"></div>
+      </section>
+
+      <footer>This is a minimal frontend to exercise CI/CD and automated tests.</footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
