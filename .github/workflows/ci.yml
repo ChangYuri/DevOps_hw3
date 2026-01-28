@@ -47,7 +47,7 @@ jobs:
         # polish the format
     - name: Code format with Prettier
       run: |
-        npx prettier --write "**/*.{py,md,js,json,css,html}"
+        npx prettier --write "**/*.{js,css,html,json,md}"
     - name: Quality gates
       run: |
         npx eslint . --max-warnings=0
