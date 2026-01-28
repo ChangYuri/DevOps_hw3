@@ -54,8 +54,10 @@ jobs:
         npx prettier --check app/static/app.js --config .prettierrc
 
     - name: Test with pytest
-      run: uv run pytest tests/test_app.py --doctest-modules --junitxml=junit/test-results-${{ matrix.python-version }}.xml \
-        --cov-fail-under=80 
+      run: uv run pytest tests/test_app.py \
+       --doctest-modules \
+       --junitxml=junit/test-results-${{ matrix.python-version }}.xml \
+       --cov-fail-under=80 
     - name: Upload pytest test results
       uses: actions/upload-artifact@v4
       with:
