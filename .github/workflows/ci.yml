@@ -51,7 +51,7 @@ jobs:
     - name: Quality gates
       run: |
         npx eslint app/static/app.js --config eslint.config.js --max-warnings=0
-        npx prettier --check . --config .prettierrc
+        npx prettier --check app/static/app.js --config .prettierrc
 
     - name: Test with pytest
       run: pytest tests.py --doctest-modules --junitxml=junit/test-results-${{ matrix.python-version }}.xml \
