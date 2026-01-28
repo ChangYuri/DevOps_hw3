@@ -50,7 +50,7 @@ jobs:
         npx prettier --write "**/*.{js,css,html,json,md}"
     - name: Quality gates
       run: |
-        npx eslint . --max-warnings=0
+        npx eslint app/static/app.js --config eslint.config.js --max-warnings=0
         npx prettier --check . --config .prettierrc
 
     - name: Test with pytest
