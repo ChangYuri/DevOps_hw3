@@ -32,12 +32,10 @@ jobs:
       run: |
         pipx install uv
         uv init -p 3.10
-        
     - name: Install dependencies node.js
       run: npm ci
     - name: Install dependencies python
       run: |
-        uv init -p 3.10
         uv add -r requirements.txt
 
   clean:
