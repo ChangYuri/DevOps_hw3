@@ -1,6 +1,7 @@
 // eslint.config.js
 import js from "@eslint/js";
 import { defineConfig } from "eslint/config";
+import globals from "globals";
 
 export default defineConfig([
 	{
@@ -12,6 +13,11 @@ export default defineConfig([
         "**/dist/**",
         "**/build/**",
         ],
+        languageOptions: {
+            globals: {
+            ...globals.browser,
+            },
+        },
 		plugins: {
 			js,
 		},
