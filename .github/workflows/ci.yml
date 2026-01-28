@@ -30,6 +30,7 @@ jobs:
 
     - name: configure environment
       run: |
+        pipx install uv
         uv init -p 3.10
         
     - name: Install dependencies node.js
