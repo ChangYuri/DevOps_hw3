@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.8.1"
+  },
+  "name": "hw3-jenkins_ci",
+  "version": "1.0.0",
+  "description": "This repository contains a tiny Flask app and pytest tests intended as a simple target for CI using GitHub Actions or Jenkins.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChangYuri/DevOps_hw3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChangYuri/DevOps_hw3/issues"
+  },
+  "homepage": "https://github.com/ChangYuri/DevOps_hw3#readme"
+}
