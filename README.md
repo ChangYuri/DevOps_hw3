@@ -8,28 +8,9 @@ Files added:
 - `tests/test_app.py` — five pytest tests covering the endpoints.
 - `requirements.txt` — lists `Flask` and `pytest`.
 - `.github/workflows/ci.yml` — GitHub Actions workflow to run tests.
-- `Jenkinsfile` — example Jenkins pipeline to run tests.
-
-How to run locally
-
-1. Create and activate a venv:
-
-```bash
-python3 -m venv .venv
-. .venv/bin/activate
-```
-
-2. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Run tests:
-
-```bash
-pytest -q
-```
+- `.prettierrc` — configuration file for Prettier.
+- `eslint.config.js` — configuration file for ESLint.
+- `package.json` — lists Prettier and ESLint as dev dependencies.
 
 What the tests cover
 
@@ -38,7 +19,3 @@ What the tests cover
 - recommend returns empty list when no matches
 - recipe endpoint returns a known recipe by id
 - recipe endpoint returns 404 for missing id
-
-Notes
-
-These are intentionally small, deterministic tests to make CI runs reliable. You can extend the app and tests as needed for homework exercises.
