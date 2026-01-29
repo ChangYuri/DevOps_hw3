@@ -1,6 +1,8 @@
 # official doc 
 # https://github.com/actions/starter-workflows/blob/main/ci/python-app.yml
-
+# I also checked out these links
+# https://hsf-training.github.io/hsf-training-cicd-github/11-running-dependent-jobs/index.html
+# https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax
 name: Python application
 
 on:
